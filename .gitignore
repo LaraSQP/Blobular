@@ -1,0 +1,16 @@
+# Private or local-only files
+do not upload/
+
+# Local favicon
+/favicon.png
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.vscode/
+.idea/
