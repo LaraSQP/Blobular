@@ -26,8 +26,6 @@ No database is required.
 
 ## Screenshot
 
-Add a screenshot of the running blob here, for example:
-
 ![Animated 3D Blob](https://github.com/user-attachments/assets/6453f9ec-4ddd-476d-8233-198dc154dd13)
 
 ## How it works
