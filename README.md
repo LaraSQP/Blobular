@@ -1,10 +1,10 @@
 # Animated 3D Blob
 
-A lightweight, standalone animated 3D blob that runs directly in a web browser. Its appearance and animation can be customized through a configuration file and a password-protected web editor.
+A lightweight, standalone, animated 3D blob that runs directly in a web browser. Its appearance and animation can be customized through a configuration file and a password-protected web editor.
 
 ## Overview
 
-This project began as an effort to create a simple, animated blob inspired by the *AI Assistant Blob* experiment by Aaron Iker. The objective was to retain the original's organic, continuously changing 3D appearance while making it easy to deploy on a personal website and customize without editing JavaScript.
+This project began as an effort to create a simple, animated blob inspired by the [*AI Assistant Blob*](https://codepen.io/aaroniker/pen/YoqNRB) experiment by [Aaron Iker](https://codepen.io/aaroniker). The objective was to retain the original's organic, continuously changing 3D appearance while making it easy to deploy on a personal website and customize without editing JavaScript.
 
 The resulting project separates the rendering code from its configuration. Colors and animation parameters are stored in a JSON file, while a small HTML editor provides color pickers and sliders for changing those settings. A PHP endpoint saves changes on the server so they persist between visits and browser sessions.
 
@@ -16,7 +16,7 @@ No database is required.
 - WebGL rendering with Three.js
 - Procedural shape deformation using Simplex noise
 - Adjustable blob and lighting colors
-- Adjustable animation speed, shape irregularity and processing factor
+- Adjustable animation speed, shape irregularity, and processing factor
 - Separate JSON configuration file
 - Browser-based configuration editor with color pickers and sliders
 - Persistent server-side settings
@@ -36,7 +36,7 @@ The project uses three main components.
 
 `script.js` creates a Three.js scene containing a high-resolution sphere. The sphere's vertices are continuously displaced using Simplex noise, creating the blob's organic movement.
 
-Three.js handles the 3D geometry, materials, lighting and rendering. The animation runs through `requestAnimationFrame()`.
+Three.js handles the 3D geometry, materials, lighting, and rendering. The animation runs through `requestAnimationFrame()`.
 
 ### 2. Configuration
 
@@ -53,7 +53,7 @@ Because the configuration is separate from the rendering code, changing settings
 - **Save settings** sends the new configuration to `editor/save.php`.
 - **Reset defaults** restores the default settings defined by the editor.
 
-The PHP endpoint validates the submitted values before writing them to `blob-config.json`. The editor directory is protected using HTTP authentication configured through the hosting control panel.
+The PHP endpoint validates the submitted values before writing them to `blob-config.json`. The editor directory is protected using HTTP authentication configured through the hosting control panel (eg, [cPanel](https://www.cpanel.net/).
 
 The configuration file itself is publicly readable, but only authenticated users should be able to modify it through the provided editor.
 
@@ -62,7 +62,7 @@ The configuration file itself is publicly readable, but only authenticated users
 For the public animation:
 
 - A modern web browser with WebGL support
-- A web server capable of serving HTML, CSS, JavaScript and JSON files
+- A web server capable of serving HTML, CSS, JavaScript, and JSON files
 
 For the configuration editor:
 
@@ -77,7 +77,7 @@ The editor uses the PHP endpoint to save settings. The public animation does not
 
 ### Step 1: Download or clone the repository
 
-Place the project files in a directory on your computer, or upload them directly to your web hosting account.
+Place the project files in a directory on your computer or upload them directly to your web hosting account.
 
 ### Step 2: Install the JavaScript libraries
 
@@ -119,7 +119,7 @@ The available settings are documented below.
 
 ### Step 4: Upload the public files
 
-Upload `index.html`, `style.css`, `script.js`, `blob-config.json` and the `lib` directory to your website's document root.
+Upload `index.html`, `style.css`, `script.js`, `blob-config.json`, and the `lib` directory to your website's document root.
 
 Check that the script paths in `index.html` match the actual filenames and directories.
 
@@ -209,7 +209,7 @@ The project is based on the *AI Assistant Blob* experiment by **Aaron Iker (@aar
 
 - [AI Assistant Blob — CodePen](https://codepen.io/porst17/pen/raNmzLM)
 
-The original experiment uses Three.js, Simplex noise and dynamic deformation of a sphere to produce an organic animated shape.
+The original experiment uses Three.js, Simplex noise, and dynamic deformation of a sphere to produce an organic animated shape.
 
 The visual concept was inspired by the Dribbble design:
 
@@ -237,4 +237,4 @@ Do not assume that the original implementation is available under an unrestricte
 
 ## Contributions
 
-Suggestions, bug reports and improvements are welcome. Potential areas for improvement include additional configuration options, better accessibility, more animation controls in the editor, and compatibility with newer versions of Three.js.
+Suggestions, bug reports, and improvements are welcome. Potential areas for improvement include additional configuration options, better accessibility, more animation controls in the editor, and compatibility with newer versions of Three.js.
