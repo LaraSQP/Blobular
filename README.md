@@ -74,7 +74,7 @@ public_html/
     └── save.php
 ```
 
-The filenames and directory paths above reflect the intended deployment layout. `style.css` and `favicon.png` are presentation assets; the favicon is optional.
+The filenames and directory paths above reflect the intended deployment layout.
 
 ## Requirements
 
