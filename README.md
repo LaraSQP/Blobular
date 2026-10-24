@@ -57,25 +57,6 @@ The PHP endpoint validates the submitted values before writing them to `blob-con
 
 The configuration file itself is publicly readable, but only authenticated users should be able to modify it through the provided editor.
 
-## Project structure
-
-```text
-public_html/
-├── index.html
-├── style.css
-├── script.js
-├── blob-config.json
-├── lib/
-│   ├── jquery-3.4.1.min.js
-│   ├── three.min.js
-│   └── simplex-noise.min.js
-└── editor/
-    ├── config.html
-    └── save.php
-```
-
-The filenames and directory paths above reflect the intended deployment layout.
-
 ## Requirements
 
 For the public animation:
