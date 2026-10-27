@@ -207,7 +207,7 @@ The provided design is intended for a small personal website. If the editor is l
 
 The project is based on the *AI Assistant Blob* experiment by **Aaron Iker (@aaroniker)** on CodePen:
 
-- [AI Assistant Blob — CodePen](https://codepen.io/porst17/pen/raNmzLM)
+- [AI Assistant Blob — CodePen](https://codepen.io/aaroniker/pen/YoqNRB)
 
 The original experiment uses Three.js, Simplex noise, and dynamic deformation of a sphere to produce an organic animated shape.
 
