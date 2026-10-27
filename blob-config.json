@@ -1,0 +1,9 @@
+{
+  "blobColor": "#e4ecfa",
+  "upperLight": "#a7f8ab",
+  "lowerLight": "#b7b7b4",
+  "ambientLight": "#013404",
+  "speed": 0.5,
+  "spikes": 1.75,
+  "processing": 1.0
+}
